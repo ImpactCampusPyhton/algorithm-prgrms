@@ -4,5 +4,5 @@
 ###Day1 
 [Level1 - 로또의 최고 순위와 최저 순위
 (프로그래머스)](https://programmers.co.kr/learn/courses/30/lessons/77484)   
-###Day
-[Level2 - 문자열 압축(프로그래머스)](https://programmers.co.kr/learn/courses/30/lessons/60057) 
+###Day2
+[Level1 - 신규 아이디 추천(프로그래머스)](https://programmers.co.kr/learn/courses/30/lessons/72410?language=python3) 
