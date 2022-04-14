@@ -18,9 +18,9 @@ def solution(record):
     
     # 2) 1)의 딕셔너리를 참고해 새로운 닉네임이 들어간 텍스트 결과를 출력한다.
     for r in record:
-        if r.split()[0] == 'Enter' and user[r.split()[1]]:
+        if r.split()[0] == 'Enter':
             answer.append(user[r.split()[1]]+'님이 들어왔습니다.')
-        elif r.split()[0] == 'Leave' and user[r.split()[1]]:
+        elif r.split()[0] == 'Leave':
             answer.append(user[r.split()[1]]+'님이 나갔습니다.')
 
     return answer
