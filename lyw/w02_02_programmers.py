@@ -1,24 +1,21 @@
-# lv2 타겟 넘버
-#BFS 탐색을 이용
-def solution(numbers, target):
-    sub = [0]
-    for i in numbers:
-        ss = []
-        for j in sub:
-            ss.append(j+i)
-            ss.append(j-i)
-        sub = ss
-        #print(ss)
-    #print(sub)
-    #print(ss)
+# lv2 124 나라의 숫자
 
-    return sub.count(target)
+def solution(n):
+    answer = ''
+    while n:
+        if n % 3:
+            answer += str(n%3)
+            print("if:",answer)
+            n //= 3 # //= 왼쪽 변수에서 오른쪽 값을 나눈 몫의 결과를 왼쪽변수에 할당
+        else:
+            answer +="4"
+            print("else: ",answer)
+            n = n//3 -1
+            print(n)
 
+            #print(answer)
+    return answer[::-1]
 
-numbers = [1, 1, 1, 1, 1]
-target = 3
-#numbers = [4, 1, 2, 1]
-#target = 4
-#solution(numbers,target)
-print(solution(numbers,target))
+n =7
 
+print(solution(n))

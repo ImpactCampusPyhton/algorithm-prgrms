@@ -1,32 +1,20 @@
-# lv2 기능개발
+# lv 2 멀쩡한 사각형
 
-def solution(progresses, speeds):
-    answer = []
-    days = 1
-    counts = 0
+def solution(w,h):
+    if w >h:
+        square = w
+    else:
+        square = h
+    #print(square)
+    for i in range(1, square +1):
+        #print(i)
+        if w % i == 0 and h % i == 0:
 
-    for i in range(len(progresses)):
-        if i == 0 and progresses[i] + days * speeds[i] >= 100:
-            counts += 1
-            answer.append(counts)
+            LCM = i
+            #print(LCM) #최소공배수
+    return w*h -(w /LCM + h /LCM - 1) * LCM
 
+w = 8
+h =12
 
-        elif i > 0 and progresses[i] + days * speeds[i] >= 100:
-            counts += 1
-            answer[-1] += 1
-
-        while progresses[i] + days * speeds[i] <100:
-            days +=1
-            if progresses[i] + days * speeds[i] >=100:
-                counts =1
-                print(counts)
-                answer.append(counts)
-                break
-
-
-    return answer
-
-progress = [93, 30, 55]
-speeds = [1, 30, 5]
-
-print(solution(progress,speeds))
+print(solution(w,h))
