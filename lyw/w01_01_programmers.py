@@ -1,7 +1,5 @@
 # lv2. 문자열 압축
 
-
-
 def solution(s):
     answer = 10000
     for i in range(1,len(s)//2+2):
