@@ -9,7 +9,7 @@ def solution(numbers,target):
         re=[]
         for j in sum:
             #print(j)
-            print(sum)
+            #print(sum)
             re.append(j+i)
             re.append(j-i)
             #print(type(re))
