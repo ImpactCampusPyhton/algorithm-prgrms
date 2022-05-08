@@ -30,3 +30,5 @@ def solution(s):
         answer = min(answer, len(res))
     
     return answer
+
+print(solution)
