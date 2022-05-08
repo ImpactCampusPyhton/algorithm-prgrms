@@ -11,7 +11,7 @@ def solution(w,h):
         if w % i == 0 and h % i == 0:
 
             LCM = i
-            #print(LCM) #최소공배수
+            #print(LCM)
     return w*h -(w /LCM + h /LCM - 1) * LCM
 
 w = 8

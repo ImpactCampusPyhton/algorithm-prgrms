@@ -11,11 +11,11 @@ def solution(n):
             answer +="4"
             print("else: ",answer)
             n = n//3 -1
-            print(n)
+            #print(n)
 
             #print(answer)
     return answer[::-1]
 
-n =7
+n =6
 
 print(solution(n))
